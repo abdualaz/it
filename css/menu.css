@@ -1,0 +1,75 @@
+/* تنسيق قائمة التنقل */
+
+.header .links .icon {
+    width: 30px;
+    height: 24px;
+    display: none;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.header .links .icon span {
+    display: block;
+    background-color: #333;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 7px;
+}
+
+.header .links ul li {
+    white-space: nowrap;
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #0e0d0d;
+    transition: 0.3s;
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+.header .links ul li a:hover {
+    color: #1B3280;
+}
+
+
+.header .links ul li.special-btn a {
+    background-color: #27ae60;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.header .links ul li.special-btn a:hover {
+    background-color: #219653;
+}

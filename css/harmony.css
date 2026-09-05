@@ -1,0 +1,186 @@
+ /* =========================
+           TABLET + MOBILE
+        ========================= */
+        @media (max-width: 991px) {
+            .header {
+                padding: 10px 15px;
+            }
+            .header .links .icon {
+                display: flex;
+            }
+            .header .links ul {
+                position: absolute;
+                top: calc(100% + 15px);
+                right: 0;
+                width: min(240px, calc(100vw - 30px));
+                min-width: 0;
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                background-color: #f6f6f6;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+                z-index: 1000;
+                border-radius: 8px;
+            }
+            .header .links:hover ul {
+                display: flex;
+            }
+            .header .links ul::before {
+                content: "";
+                border: 10px solid transparent;
+                border-bottom-color: #f6f6f6;
+                position: absolute;
+                right: 5px;
+                top: -20px;
+            }
+            .header .links ul li {
+                width: 100%;
+            }
+            .header .links ul li a {
+                width: 100%;
+                padding: 14px 15px;
+                font-size: 17px;
+            }
+            .header .links ul li a:hover {
+                padding-right: 20px;
+                background-color: rgba(27, 50, 128, 0.05);
+            }
+            .header .links ul li.special-btn a {
+                border-radius: 0;
+                padding: 12px 15px;
+            }
+        }
+     
+        @media (max-width: 480px) {
+            .header {
+                min-height: 65px;
+                padding: 8px 10px;
+            }
+            .header .container {
+                min-height: 49px;
+            }
+            .header .logo {
+                width: 52px;
+            }
+            .title1 {
+                font-size: 26px;
+                top: 12px;
+            }
+            .header .links .icon {
+                width: 27px;
+                height: 22px;
+            }
+            .header .links ul {
+                top: calc(100% + 12px);
+                width: min(220px, calc(100vw - 20px));
+            }
+            .header .links ul li a {
+                font-size: 16px;
+                padding: 13px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .header {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .header .logo {
+                width: 48px;
+            }
+            .title1 {
+                font-size: 23px;
+            }
+            .header .links .icon {
+                width: 25px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .header .links .icon {
+                display: none;
+            }
+  .header .logo {
+            position: relative;
+            left: -70px;
+            top: auto;
+        }
+            .header .links ul {
+                display: flex;
+                position: static;
+                background-color: transparent;
+                box-shadow: none;
+    
+            }
+            .header .links ul::before {
+                display: none;
+            }
+            .header .links ul li a {
+                color: #0e0d0d;
+                padding: 10px 12px;
+                position: relative;
+                left: 95px;
+            }
+            .header .links ul li a:hover {
+                color: #1B3280;
+                font-size: 20px;
+                border-radius: 50px;
+                background-color: rgba(19, 25, 91, 0.338);
+            }
+            .header .links ul li.special-btn a {
+                background-color: #27ae60;
+                border-radius: 4px;
+                padding: 8px 15px;
+            }
+        }
+        /* =========================
+           LARGE DESKTOP
+        ========================= */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 1400px;
+            }
+            .header .links ul li a {
+                font-size: 18px;
+            }
+        }
+         /* =========================
+           TABLET
+        ========================= */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .header .logo {
+                width: 60px;
+            }
+            .title1 {
+                font-size: 32px;
+            }
+            #footer .cont {
+                gap: 30px;
+            }
+           #footer .cont .fab {
+                font-size: 45px;
+            }
+        }
+        /* =========================
+           MOBILE FOOTER
+        ========================= */
+        @media (max-width: 480px) {
+            #footer {
+                min-height: 280px;
+                padding: 25px 10px;
+            }
+           #footer .cont {
+                gap: 18px;
+                margin-top: 30px;
+            }
+           #footer .cont .fab {
+                font-size: 35px;
+            }
+            #footer hr {
+                width: 80%;
+            }
+            #footer h3 {
+                font-size: 13px;
+                padding-top: 25px;
+            }
+        }

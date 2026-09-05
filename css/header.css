@@ -1,0 +1,44 @@
+/* headerتنسيق ال */
+.header {
+    width: 100%;
+    min-height: 70px;
+    border-bottom: 2px #1B3280 solid;
+    border-radius: 8px 8px 0 0;
+    background-color: #4388CC;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.header .container {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.header .logo {
+    width: 65px;
+    height: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+    flex-shrink: 0;
+}
+
+
+.title1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(26px, 3vw, 38px);
+    white-space: nowrap;
+    margin: 0;
+}
+
+.header .links {
+    margin-left: auto;
+    position: relative;
+}
