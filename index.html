@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IT HUB</title>
-
-  <!-- External styles (keep your existing CSS files if needed) -->
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/header.css" />
@@ -13,7 +11,6 @@
   <link rel="stylesheet" href="css/menu.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/footer.css" />
-
   <style>
     :root{
       --blue:#1B3280;
@@ -26,7 +23,6 @@
       --radius:16px;
       --txt:#222;
     }
-
     *{box-sizing:border-box}
     body{
       margin:0;
@@ -35,15 +31,12 @@
       line-height:1.6;
       background:#fff;
     }
-
     .container{
       max-width:var(--max-width);
       margin:0 auto;
       padding:0 1rem;
       width:100%;
     }
-
-    /* Header */
     .header{
       background:linear-gradient(90deg,var(--accent),#76b0e0 60%);
       color:#fff;
@@ -78,8 +71,6 @@
       font-weight:600;
     }
     .nav a:hover{background:rgba(0,0,0,0.08)}
-
-    /* Hero */
     .hero{
       text-align:center;
       padding:28px 0;
@@ -89,7 +80,6 @@
     .hero h1{font-size:clamp(28px,6vw,48px); margin:6px 0}
     .hero h2{font-size:clamp(18px,3vw,26px); margin:6px 0}
     .hero .hero-img{width:120px;max-width:28%;border-radius:50%;background:var(--dark);padding:8px}
-
     .hero .actions{margin-top:12px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
     .btn{
       display:inline-block;
@@ -102,12 +92,8 @@
       border:1px solid rgba(0,0,0,0.08);
     }
     .btn.secondary{background:#fff;color:var(--accent);border:2px solid rgba(0,0,0,0.06)}
-
-    /* About */
     .about{padding:18px 0;text-align:center}
     .about img{max-width:100%;height:auto}
-
-    /* Info section and features */
     .features{
       max-width:var(--max-width);
       margin:0 auto;
@@ -116,8 +102,6 @@
     }
     .features h2{text-align:center;color:var(--blue)}
     .features p.lead{text-align:center;color:#333;margin-bottom:18px}
-
-    /* Cards grid - responsive using auto-fit */
     .cards{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -140,8 +124,6 @@
     .card .icon{width:110px;height:110px;object-fit:contain}
     .card h3{margin:12px 0 8px}
     .card p{color:#333;flex:1}
-
-    /* Steps / tracks */
     .cardss{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -152,11 +134,7 @@
       border-radius:18px;padding:18px;min-height:240px;background:linear-gradient(180deg,#bec7ce,#98c4e8);
       display:flex;flex-direction:column;align-items:center;text-align:center;
     }
-
-    /* Tools / utilities */
     .cardsss{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--gap);padding:1rem}
-
-    /* News */
     .news{
       max-width:var(--max-width);
       margin:0 auto;padding:1rem;
@@ -167,8 +145,6 @@
       gap:var(--gap);
     }
     .news-card{background:#fff;border-radius:14px;padding:12px;border:1px solid rgba(0,0,0,0.06)}
-
-    /* FAQ */
     .faq{
       max-width:var(--max-width);
       margin:0 auto;padding:1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;
@@ -177,8 +153,6 @@
       background:#b9dcfa;border-radius:22px;padding:20px;min-height:220px;position:relative;
     }
     .card5 h2{margin-top:0}
-
-    /* Footer */
     footer#footer{
       background:#f6f8fb;padding:28px 0;border-top:1px solid rgba(0,0,0,0.04);
     }
@@ -188,16 +162,11 @@
     footer .foot{flex:0 0 220px;text-align:center}
     footer a{color:inherit}
     footer .cont{display:flex;gap:8px;align-items:center;justify-content:center;padding-top:10px}
-
     hr{border:none;border-top:1px solid rgba(0,0,0,0.06);margin:18px 0}
-
-    /* Forms */
     input[type="text"], input[type="email"], textarea{
       width:100%;padding:8px;border-radius:8px;border:1px solid rgba(0,0,0,0.12);margin-top:6px;
     }
     form label{font-weight:700;color:#fff;display:block;margin-top:8px}
-
-    /* Responsive tweaks */
     @media (max-width:900px){
       .header .container{flex-direction:column;align-items:flex-start;gap:8px}
       .nav ul{flex-wrap:wrap}
@@ -212,7 +181,6 @@
   </style>
 </head>
 <body>
-
   <header class="header">
     <div class="container">
       <img class="logo" src="img/logo.png" alt="IT HUB Logo" />
@@ -230,7 +198,6 @@
       </nav>
     </div>
   </header>
-
   <section class="hero" aria-labelledby="site-title">
     <div class="container">
       <h1 id="site-title"><span style="color:var(--blue)">IT</span> HUB</h1>
@@ -245,18 +212,15 @@
       </div>
     </div>
   </section>
-
   <section class="about" id="about">
     <div class="container">
       <img src="img/a1.png" alt="about" style="max-width:120px;margin:0 auto;display:block">
     </div>
   </section>
-
   <section class="features">
     <div class="container">
       <h2>ما هو <span style="color:var(--blue)">IT HUB</span>؟</h2>
       <p class="lead">هو منصة عربية شاملة تهدف إلى تبسيط عالم تقنية المعلومات للمبتدئين والمحترفين.</p>
-
       <div style="text-align:right">
         <p class="a1">هو منصة عربية شاملة تهدف الى تبسيط عالم تقنية العملومات للمبتدئين...</p>
         <p class="a2">هو وجهتك المثالية IT HUB سواء كنت طالبا في تخصص الحاسب ...</p>
@@ -270,7 +234,6 @@
       </div>
     </div>
   </section>
-
   <section aria-label="التقنيات" class="cards" dir="rtl">
     <div class="card">
       <img class="icon" src="img/b1.png" alt="الحوسبة السحابية" />
@@ -278,35 +241,30 @@
       <p>تعلم كيفية بناء وإدارة البنية التحتية السحابية باستخدام AWS و Azure و Google Cloud</p>
       <a class="btn" href="#">اقرأ المزيد</a>
     </div>
-
     <div class="card">
       <img class="icon" src="img/b2.png" alt="الذكاء الاصطناعي" />
       <h3>الذكاء الاصطناعي</h3>
       <p>تعلم الذكاء الاصطناعي وتقنيات Machine Learning و NLP و Deep Learning</p>
       <a class="btn" href="#">اقرأ المزيد</a>
     </div>
-
     <div class="card">
       <img class="icon" src="img/b3.png" alt="الأمن السيبراني" />
       <h3>الأمن السيبراني</h3>
       <p>حماية الشبكات واختبار الاختراق والتحقق من الثغرات الأمنية</p>
       <a class="btn" href="#">اقرأ المزيد</a>
     </div>
-
     <div class="card">
       <img class="icon" src="img/b4.png" alt="تطوير الويب" />
       <h3>تطوير الويب</h3>
       <p>بناء تطبيقات الويب الحديثة من Frontend إلى Backend باستخدام React و Node.js</p>
       <a class="btn" href="#">اقرأ المزيد</a>
     </div>
-
     <div class="card">
       <img class="icon" src="img/b5.png" alt="تطوير التطبيقات" />
       <h3>تطوير التطبيقات</h3>
       <p>بناء تطبيقات الجوال للمنصات باستخدام Flutter و Android و iOS</p>
       <a class="btn" href="#">اقرأ المزيد</a>
     </div>
-
     <div class="card">
       <img class="icon" src="img/b6.png" alt="DevOps" />
       <h3>DevOps</h3>
@@ -314,7 +272,6 @@
       <a class="btn" href="#">اقرأ المزيد</a>
     </div>
   </section>
-
   <section style="background:var(--accent);color:#fff;padding:18px 0">
     <div class="container cardss">
       <div class="card2"><h1>1</h1><h3>المستوى المبتدئ</h3><p>الأساسيات: الشبكات، أنظمة التشغيل، HTML/CSS، أساسيات البرمجة</p><a class="btn" href="#">ابدأ المسار</a></div>
@@ -322,7 +279,6 @@
       <div class="card2"><h1>3</h1><h3>المستوى المتقدم</h3><p>الأمن المتقدم، إدارة المشاريع، DevOps، تصميم الأنظمة</p><a class="btn" href="#">ابدأ المسار</a></div>
     </div>
   </section>
-
   <section class="cardsss">
     <div class="container">
       <h2 style="text-align:center">أدوات مفيدة</h2>
@@ -333,14 +289,12 @@
           <p>أفضل محرر أكواد مجاني يدعم الإضافات واللغات المتعددة</p>
           <a class="btn" href="#">تحميل</a>
         </div>
-
         <div class="card">
           <img class="icon" src="img/c2.png" alt="Figma" />
           <h3>Figma</h3>
           <p>أداة تصميم واجهات المستخدم وتجربة المستخدم</p>
           <a class="btn" href="#">زيارة</a>
         </div>
-
         <div class="card">
           <img class="icon" src="img/c3.png" alt="Github" />
           <h3>Github</h3>
@@ -350,7 +304,6 @@
       </div>
     </div>
   </section>
-
   <section class="news">
     <div class="container">
       <h2 style="text-align:center">أخر أخبار التقنية</h2>
@@ -370,12 +323,10 @@
       </div>
     </div>
   </section>
-
   <section class="cc1" style="padding:18px 0">
     <div class="container">
       <h1 style="text-align:center"><span class="blue">الأسئلة</span> الشائعة</h1>
       <p style="text-align:center">إجابات على أكثر الأسئلة التي يطرحها المبتدئون في مجال الـ IT</p>
-
       <main class="faq" style="margin-top:12px">
         <div class="card5">
           <h2>ما هي أفضل لغة برمجية للمبتدئين؟</h2>
@@ -396,7 +347,6 @@
       </main>
     </div>
   </section>
-
   <footer id="footer">
     <div class="wrap">
       <div class="connect">
@@ -407,7 +357,6 @@
         <p><strong>الموقع:</strong> اليمن - صنعاء</p>
         <p><strong>الوقت:</strong> السبت-الخميس: 9ص-6م</p>
       </div>
-
       <div class="form">
         <form action="" aria-label="نموذج تواصل">
           <label for="name">الاسم كامل</label>
@@ -423,7 +372,6 @@
           </div>
         </form>
       </div>
-
       <div class="foot">
         <h1 style="margin:0"><span style="color:var(--blue)">IT</span>HUB</h1>
         <p style="margin:6px 0 0;color:#333">دليلك الشامل في عالم التقنية</p>
@@ -436,8 +384,7 @@
         </div>
       </div>
     </div>
-
-    <hr />
+    <hr>
     <div style="text-align:center;padding-bottom:12px">
       <h3>&copy; 2026 IT HUB — جميع الحقوق محفوظة</h3>
     </div>
